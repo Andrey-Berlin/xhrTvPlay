@@ -41,7 +41,7 @@ function liveVideo(tv) {
 
 function getFile(netWeb) {
   let xhr = new XMLHttpRequest();
-  xhr.open('GET', "video-player.txt");
+  xhr.open('GET', "https://andrey-berlin.github.io/net-web-txt/video-player.txt");
   xhr.onload = function() {
     if (xhr.status == 200) {
       netWeb(this.responseText);
